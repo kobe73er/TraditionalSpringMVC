@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form ng-app="" name="myForm" ng-init="myText = 'post@myweb.com'">
+    Email:
+    <input type="email" name="myAddress" ng-model="myText" required>
+    <h1>Status</h1>
+    {{"valid:"+myForm.myAddress.$valid}}
+    {{"dirty:"+myForm.myAddress.$dirty}}
+    {{"touched:"+myForm.myAddress.$touched}}
+</form>
+</body>
+</html>
